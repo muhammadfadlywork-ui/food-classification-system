@@ -1,32 +1,30 @@
-# Flask
-instance/
-*.sqlite3
-*.db
+# virtual env & env
+venv/
+.env
+.env.*
 
-# Deep Learning Models
-*.pth
+# python cache
+__pycache__/
+*.pyc
 
+# jupyter
+.ipynb_checkpoints/
 
-# ===============================
-# Dataset
-# ===============================
+# dataset
 dataset/
 data/
 datasets/
 
-# ===============================
-# Jupyter
-# ===============================
-.ipynb_checkpoints/
+# trained models
+*.h5
+*.pt
+*.pth
+*.onnx
 
-# ===============================
-# Environment
-# ===============================
-.env
-.env.*
+# flask
+instance/
+*.db
+*.sqlite3
 
-# ===============================
-# Logs & Cache
-# ===============================
+# logs
 logs/
-cache/
