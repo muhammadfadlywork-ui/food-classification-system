@@ -1,2 +1,38 @@
-# food-classification-system
-A web-based food classification system developed using CNN with EfficientNet architecture as an undergraduate thesis project.
+# ===============================
+# Flask
+# ===============================
+instance/
+*.sqlite3
+*.db
+
+# ===============================
+# Deep Learning Models
+# ===============================
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# ===============================
+# Dataset
+# ===============================
+dataset/
+data/
+datasets/
+
+# ===============================
+# Jupyter
+# ===============================
+.ipynb_checkpoints/
+
+# ===============================
+# Environment
+# ===============================
+.env
+.env.*
+
+# ===============================
+# Logs & Cache
+# ===============================
+logs/
+cache/
