@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasil Klasifikasi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="m-0 p-0">
+
+<nav class="fixed top-0 left-0 w-full px-6 py-4 flex items-center justify-between z-50">
+
+  <!-- Tombol Kiri (Back ke /predict) -->
+  <a href="/predict"
+     class="flex items-center justify-center w-10 h-10 border border-black rounded-full bg-transparent hover:bg-black/10 transition">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+    </svg>
+  </a>
+
+  <!-- Tombol Kanan (Home ke /) -->
+  <a href="/"
+     class="flex items-center justify-center w-10 h-10 border border-black rounded-full bg-transparent hover:bg-black/10 transition">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="black" class="w-6 h-6 rotate-180">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+    </svg>
+  </a>
+
+</nav>
+
+<section
+  class="bg-[url('../static/images/images2_try.png')] bg-cover bg-center h-screen w-full flex justify-center items-center px-6">
+
+  <div
+    class="result-card relative bg-white w-full max-w-2xl rounded-3xl shadow-xl p-10 flex flex-col items-center overflow-hidden">
+
+    <!-- Gambar -->
+    <img src="{{ image_path }}" alt="Hasil Prediksi"
+      class="img-anim w-64 h-64 object-cover rounded-2xl shadow-md mb-6">
+
+    <!-- Teks -->
+    <h2 class="card-title text-gray-800 text-xl font-bold mb-2 text-center">
+      Hasil Klasifikasi
+    </h2>
+    <p class="card-result text-red-600 text-3xl font-extrabold text-center">
+      {{ result }}
+    </p>
+
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const card = document.querySelector(".result-card");
+    setTimeout(() => {
+      card.classList.add("show");
+    }, 80);
+  });
+</script>
+
+<style>
+  /* Card muncul dari bawah */
+  .result-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s ease;
+  }
+
+  .result-card.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Animasi gambar zoom-in */
+  .img-anim {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.6s ease 0.2s;
+  }
+
+  .result-card.show .img-anim {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  /* Fade + slide teks */
+  .card-title,
+  .card-result {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.6s ease 0.35s;
+  }
+
+  .result-card.show .card-title,
+  .result-card.show .card-result {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Hover efek elegan */
+  .result-card:hover {
+    transform: translateY(-8px) scale(1.015);
+    transition: all 0.3s ease;
+  }
+</style>
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+# virtual env & env
+venv/
+.venv/
+env/
+.env
+.env.*
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# jupyter
+.ipynb_checkpoints/
+
+# dataset
+dataset/
+data/
+datasets/
+
+# trained models
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# flask
+instance/
+*.db
+*.sqlite3
+
+# logs
+logs/
+
+# editor & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# uploads
+static/uploads/

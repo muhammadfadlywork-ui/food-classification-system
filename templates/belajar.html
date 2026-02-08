@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="m-0">
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-10 p-4 transition-all duration-300 bg-transparent">
+    <div class="flex justify-between items-center">
+      <h1 class="text-white text-xl font-bold">KAMI</h1>
+      <div class="flex items-center space-x-12">
+        <a href="#" class="text-white">Home</a>
+        <a href="#" class="text-white">About Us</a>
+        <button class="bg-white text-black px-3 py-2 rounded" onclick="window.location.href='/predict'">Try Now!</button>
+      </div>
+    </div>
+  </nav>
+
+<section
+  class="bg-[url('../static/images/image.png')] bg-cover bg-center h-screen w-full flex flex-col justify-center items-start px-10">
+
+  <!-- H1 dengan efek mengetik -->
+<h1 id="typingText" class="text-[50px] text-white font-bold leading-tight min-h-[70px] block"></h1>
+
+  <!-- Paragraf biasa -->
+  <p class="text-[19px] max-w-2xl mt-2 text-white">
+    Klasifikasi makanan khas Indonesia otomatis—membantu usaha kuliner Anda lebih efisien dan profesional.
+  </p>
+
+  <!-- Tombol biasa -->
+<button
+  class="bg-white text-black font-medium rounded py-2 px-10 mt-4
+         transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:bg-red-600 hover:text-white">
+  Coba Langsung Disini!
+</button>
+
+</section>
+
+  <section class="h-screen bg-white flex items-center px-10">
+    <!-- Gambar (kiri) -->
+    <div class="w-2/5 flex justify-start pl-8">
+      <img src="../static/images/maskot.png" alt="Gambar" class="max-w-sm">
+    </div>
+
+    <!-- Teks (kanan) -->
+    <div class="w-3/5 ml-0">
+      <h2 class="text-[40px] font-bold text-gray-900 mb-4 text-center max-w-[800px]">Tentang Aplikasi Ini</h2>
+      <p class="text-gray-700 text-lg max-w-[800px] text-justify">
+        Aplikasi Klasifikasi Makanan Khas Indonesia hadir sebagai solusi cerdas untuk membantu pelaku usaha kuliner
+        dalam mengelola data makanan secara lebih terstruktur dan efisien. Sistem ini terintegrasi dengan kamera CCTV
+        yang menangkap gambar makanan secara real-time, kemudian mengklasifikasikannya berdasarkan jenis. Dengan cara
+        ini, aplikasi mampu mendeteksi jika ada makanan yang salah penempatan dan membantu menjaga kerapian, terutama
+        pada konsep prasmanan atau self-service. Teknologi klasifikasi otomatis ini menghilangkan kebutuhan identifikasi
+        manual dan memastikan data tetap akurat serta mudah diolah.
+      </p><br>
+      <p class="text-gray-700 text-lg max-w-[800px] text-justify">
+        Selain itu, sistem ini juga mendukung proses pembayaran secara otomatis. Ketika pelanggan mengambil makanan,
+        kamera akan meng-capture gambar dan sistem langsung menghitung jenis serta jumlah makanan yang diambil.
+        Informasi tersebut digunakan untuk menghasilkan total pembayaran tanpa input manual, sehingga mempercepat
+        transaksi dan meminimalkan kesalahan. Dengan kombinasi klasifikasi visual, pengawasan otomatis, dan integrasi
+        pembayaran, aplikasi ini menjadi solusi modern yang mendukung efisiensi sekaligus pelestarian kuliner khas
+        Indonesia.
+      </p>
+      <a href="#" class="text-blue-600 text-lg mt-5">Selengkapnya</a>
+    </div>
+  </section>
+
+  <section class="bg-gray-200 px-10 flex-col py-6">
+    <div class="flex items-start pt-10 justify-center">
+        <h2 class="text-[40px] font-bold text-gray-900 mb-4 text-center ">Berbagai Makanan Khas <span class="bg-red-600 text-white px-2">Indonesia</span> <br>untuk Analisis Klasifikasi</h2>
+    </div>
+
+    <div class="flex justify-between mt-10">
+   <!-- NASI GORENG -->
+<div class="group relative h-80 w-60 bg-cover bg-center rounded-[20px] drop-shadow-xl overflow-hidden"
+     style="background-image: url('../static/images/makanan/Nasi_Goreng.jpg')">
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+    <h1 class="text-white font-bold text-[18px] mb-1 leading-tight">
+      NASI GORENG
+    </h1>
+    <p class="text-gray-200 text-[14px] leading-snug">
+      Nasi goreng khas Indonesia dengan bumbu rempah dan topping sesuai selera.
+    </p>
+  </div>
+</div>
+
+<!-- ASINAN JAKARTA -->
+<div class="group relative h-80 w-60 bg-cover bg-center rounded-[20px] drop-shadow-xl overflow-hidden"
+     style="background-image: url('../static/images/makanan/Asinan_Jakarta.jpg')">
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+    <h1 class="text-white font-bold text-[18px] mb-1 leading-tight">
+      ASINAN JAKARTA
+    </h1>
+    <p class="text-gray-200 text-[14px] leading-snug">
+      Sayuran atau buah segar dengan kuah asam pedas khas Betawi.
+    </p>
+  </div>
+</div>
+
+<!-- AYAM BETUTU -->
+<div class="group relative h-80 w-60 bg-cover bg-center rounded-[20px] drop-shadow-xl overflow-hidden"
+     style="background-image: url('../static/images/makanan/Ayam_Betutu.jpg')">
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+    <h1 class="text-white font-bold text-[18px] mb-1 leading-tight">
+      AYAM BETUTU
+    </h1>
+    <p class="text-gray-200 text-[14px] leading-snug">
+      Hidangan ayam khas Bali yang dibumbui dan dimasak dengan rempah lengkap.
+    </p>
+  </div>
+</div>
+
+<!-- AYAM RUJAK -->
+<div class="group relative h-80 w-60 bg-cover bg-center rounded-[20px] drop-shadow-xl overflow-hidden"
+     style="background-image: url('../static/images/makanan/Ayam_Rujak.jpg')">
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+    <h1 class="text-white font-bold text-[18px] mb-1 leading-tight">
+      AYAM RUJAK
+    </h1>
+    <p class="text-gray-200 text-[14px] leading-snug">
+      Ayam berbumbu cabai, santan, dan rempah khas Jawa.
+    </p>
+  </div>
+</div>
+
+<!-- MIE ACEH -->
+<div class="group relative h-80 w-60 bg-cover bg-center rounded-[20px] drop-shadow-xl overflow-hidden"
+     style="background-image: url('../static/images/makanan/Mie_Aceh.jpg')">
+  <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+    <h1 class="text-white font-bold text-[18px] mb-1 leading-tight">
+      MIE ACEH
+    </h1>
+    <p class="text-gray-200 text-[14px] leading-snug">
+      Mi tebal berbumbu rempah khas Aceh, disajikan dengan daging atau seafood.
+    </p>
+  </div>
+</div>
+    </div>
+
+<div class="flex space-x-20 justify-center mt-10">
+  <!-- GADO-GADO -->
+  <div class="group relative h-80 w-60 bg-cover bg-center rounded-[20px] drop-shadow-xl overflow-hidden"
+    style="background-image: url('../static/images/makanan/Gado_Gado.jpg')">
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+      <h1 class="text-white font-bold text-[18px] mb-1 leading-tight">GADO-GADO</h1>
+      <p class="text-gray-200 text-[14px] leading-snug">
+        Sayuran rebus dengan lontong dan siraman saus kacang khas Indonesia.
+      </p>
+    </div>
+  </div>
+
+  <!-- SATE MARANGGI -->
+  <div class="group relative h-80 w-60 bg-cover bg-center rounded-[20px] drop-shadow-xl overflow-hidden"
+    style="background-image: url('../static/images/makanan/Sate_Meranggi.jpg')">
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+      <h1 class="text-white font-bold text-[18px] mb-1 leading-tight">SATE MARANGGI</h1>
+      <p class="text-gray-200 text-[14px] leading-snug">
+        Sate khas Purwakarta dengan bumbu marinade dan sambal tomat segar.
+      </p>
+    </div>
+  </div>
+
+  <!-- TAHU TELUR -->
+  <div class="group relative h-80 w-60 bg-cover bg-center rounded-[20px] drop-shadow-xl overflow-hidden"
+    style="background-image: url('../static/images/makanan/Tahu_Telur.jpg')">
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+      <h1 class="text-white font-bold text-[18px] mb-1 leading-tight">TAHU TELUR</h1>
+      <p class="text-gray-200 text-[14px] leading-snug">
+        Kombinasi tahu goreng dan telur dengan saus kacang atau petis.
+      </p>
+    </div>
+  </div>
+
+  <!-- PEMPEK -->
+  <div class="group relative h-80 w-60 bg-cover bg-center rounded-[20px] drop-shadow-xl overflow-hidden"
+    style="background-image: url('../static/images/makanan/Pempek.jpg')">
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+      <h1 class="text-white font-bold text-[18px] mb-1 leading-tight">PEMPEK</h1>
+      <p class="text-gray-200 text-[14px] leading-snug">
+        Olahan ikan dan tepung sagu khas Palembang dengan kuah cuko asam pedas.
+      </p>
+    </div>
+  </div>
+
+  <!-- SOTO LAMONGAN -->
+  <div class="group relative h-80 w-60 bg-cover bg-center rounded-[20px] drop-shadow-xl overflow-hidden"
+    style="background-image: url('../static/images/makanan/Soto_Lamongan.jpg')">
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+      <h1 class="text-white font-bold text-[18px] mb-1 leading-tight">SOTO LAMONGAN</h1>
+      <p class="text-gray-200 text-[14px] leading-snug">
+        Soto ayam khas Lamongan dengan koya dan cita rasa gurih.
+      </p>
+    </div>
+  </div>
+</div>
+
+    <div class="w-full flex justify-end mt-6">
+      <a href="#"
+        class="flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-md text-sm hover:bg-red-700 transition duration-100 font-bold">
+        Selengkapnya
+        <span class="text-lg">→</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p class="text-sm">&copy; Muhammad Fadly 2025</p>
+  </footer>
+
+
+  <script>
+    const navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.remove('bg-transparent');
+        navbar.classList.add('bg-black', 'shadow-lg');
+      } else {
+        navbar.classList.add('bg-transparent');
+        navbar.classList.remove('bg-black', 'shadow-lg');
+      }
+    });
+
+  const text = "Sistem Klasifikasi Makanan Khas Indonesia";
+  const typingSpeed = 70;      // Kecepatan ngetik
+  const eraseSpeed = 40;       // Kecepatan menghapus
+  const delayAfterComplete = 1500; // Delay sebelum hapus ulang
+
+  let index = 0;
+  let isDeleting = false;
+  const typingElement = document.getElementById("typingText");
+
+  function typeLoop() {
+    const currentText = text.substring(0, index);
+    typingElement.innerHTML = currentText;
+
+    if (!isDeleting) {
+      if (index < text.length) {
+        index++;
+        setTimeout(typeLoop, typingSpeed);
+      } else {
+        isDeleting = true;
+        setTimeout(typeLoop, delayAfterComplete);
+      }
+    } else {
+      if (index > 0) {
+        index--;
+        setTimeout(typeLoop, eraseSpeed);
+      } else {
+        isDeleting = false;
+        setTimeout(typeLoop, 500);
+      }
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", typeLoop);
+  </script>
+
+</body>
+
+</html>
