@@ -10,9 +10,9 @@ class FlaskApp:
 
 
         self.classifier = ImageClassifier(
-            "static/model/V2S_BestModel.pth",     # <-- ganti ke .pth kamu
-            "static/model/classes.json",          # <-- saranku pakai ini biar urutan class aman
-            target_size=(380, 380)                # <-- 380 sesuai training yang kamu minta
+            "static/model/V2S_BestModel.pth",
+            "static/model/classes.json",
+            target_size=(380, 380)
         )
 
         self.file_handler = FileHandler(self.app.config['UPLOAD_FOLDER'])
